@@ -8,44 +8,49 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
         /* ================================== */
-        /* CSS Kustom (Meniru Struktur Awal) */
+        /* CSS Kustom dan Perbaikan */
         /* ================================== */
         * {
             font-family: sans-serif;
         }
         body {
             /* Warna latar belakang utama toko: bg-warning */
-            background-color: #fffae8; /* Lebih lembut dari warning */ 
+            background-color: #fffae8; 
         }
-        /* Kelas Padding untuk semua section (Diambil dari kode awal) */
         .section-padding {
-            padding: 100px 0; /* Menggunakan padding besar seperti kode awal */
+            padding: 100px 0;
         }
-        /* Styling Navbar (Diambil dari kode awal, disesuaikan warna) */
-        .navbar-nav a {
-            font-size: 16px; /* Sedikit diperbesar */
-            text-transform: uppercase;
-            font-weight: 500;
-        }
-        /* Mengatur agar navbar-brand dan nav-link terlihat di bg-warning */
+        
+        /* Perbaikan Kontras Navbar */
         .navbar-light .navbar-brand,
         .navbar-light .navbar-nav .nav-link {
-            color: #333 !important;
+            /* Dibuat hitam pekat agar kontras di latar kuning */
+            color: #000 !important; 
             font-weight: 700;
         }
         .navbar-light .navbar-brand:hover,
         .navbar-light .navbar-nav .nav-link:hover {
             color: #856404 !important;
         }
+        
+        /* Perbaikan Keseragaman Gambar Card */
+        .card-img-top {
+            /* Memaksa semua gambar memiliki tinggi yang seragam */
+            height: 250px; 
+            /* Memastikan gambar terpotong rapi tanpa distorsi */
+            object-fit: cover; 
+        }
+
         /* Styling Card Produk */
         .product-card {
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
             border: none;
         }
         .product-card:hover {
-            transform: translateY(-8px); /* Efek terangkat lebih dramatis */
+            transform: translateY(-8px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
         }
+        
         /* Aksen: text-danger, btn-danger */
         .text-accent {
             color: #dc3545 !important;
@@ -118,9 +123,8 @@
                     <div class="card shadow product-card h-100 bg-light">
                         <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTyJ3qPB-RjgGic7zF8dd01TNvTe-dncjZEcAK1O1AdXV0XwVaqMNyeboRi1Gx8NSIC2zA2yJn8ocT-B4v5HzaLpETV8vU1byfBF2PAvlnTj6Y38e1Rch5F" class="card-img-top" alt="Produk 1">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title text-dark">Moondrop Space Travel 2 II 2nd Gen HiFi ANC TWS Bluetooth Earbuds 13mm Driver Beryllium Bass Punchy Mid Natural Treble Detail Low THD 6.0 Bluetooth Gaming Mode - White
-</h5>
-                            <p class="card-text mb-2 text-muted">Headset Wireless</p>
+                            <h5 class="card-title text-dark">Moondrop Space Travel 2 II 2nd Gen HiFi ANC TWS Bluetooth Earbuds</h5>
+                            <p class="card-text mb-2 text-muted">Headset Wireless HiFi dan ANC.</p>
                             <h4 class="mt-auto mb-3 text-danger fw-bold">RP.450.000,-</h4>
                             <button class="btn btn-danger btn-lg btn-action" data-bs-toggle="modal" data-bs-target="#productDetailModal1">Beli Sekarang</button>
                         </div>
@@ -132,9 +136,9 @@
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt5KaVz5IdY-ylniMt6ILxQRN4NwuoSyi69w&s" class="card-img-top" alt="Produk 2">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title text-dark">HP Iqoo Z9 5G</h5>
-                            <p class="card-text mb-2 text-muted">HP Iqoo Z9 5G (8+128GB)</p>
+                            <p class="card-text mb-2 text-muted">HP Gaming 5G (8+128GB).</p>
                             <h4 class="mt-auto mb-3 text-danger fw-bold">Rp3.999.000,-</h4>
-                            <button class="btn btn-danger btn-lg btn-action" data-bs-toggle="modal" data-bs-target="#productDetailModal1">Beli Sekarang</button>
+                            <button class="btn btn-danger btn-lg btn-action" data-bs-toggle="modal" data-bs-target="#productDetailModal2">Beli Sekarang</button>
                         </div>
                     </div>
                 </div>
@@ -144,9 +148,9 @@
                         <img src="https://imgcdn.oto.com/medium/gallery/exterior/73/1263/honda-crf-150l-61687.jpg" class="card-img-top" alt="Produk 3">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title text-dark">Honda CRF150L</h5>
-                            <p class="card-text mb-2 text-muted">motor trail/dual-sport dengan mesin 149,15 cc SOHC PGM-FI, suspensi upside down (depan) dan Pro-Link (belakang), serta sistem pengereman cakram di depan dan belakang</p>
+                            <p class="card-text mb-2 text-muted">Motor trail 150cc tangguh untuk segala medan.</p>
                             <h4 class="mt-auto mb-3 text-danger fw-bold">Rp.35.930.000,-</h4>
-                            <button class="btn btn-danger btn-lg btn-action" data-bs-toggle="modal" data-bs-target="#productDetailModal1">Beli Sekarang</button>
+                            <button class="btn btn-danger btn-lg btn-action" data-bs-toggle="modal" data-bs-target="#productDetailModal3">Beli Sekarang</button>
                         </div>
                     </div>
                 </div>
@@ -204,29 +208,94 @@
         </div>
     </footer>
 
-    <div class="modal fade" id="productDetailModal1" tabindex="-1" aria-labelledby="productDetailModal1Label" aria-hidden="true">
+<div class="modal fade" id="productDetailModal1" tabindex="-1" aria-labelledby="productDetailModal1Label" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-header bg-warning">
-                    <h5 class="modal-title" id="productDetailModal1Label">Detail Produk: Smartwatch X1</h5>
+                    <h5 class="modal-title" id="productDetailModal1Label">Detail Produk: Moondrop Space Travel 2</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body bg-light">
                     <div class="row">
                         <div class="col-md-5">
-                            <img src="https://picsum.photos/600/350?random=1" class="img-fluid mb-3 rounded shadow-sm" alt="Produk Detail">
+                            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTyJ3qPB-RjgGic7zF8dd01TNvTe-dncjZEcAK1O1AdXV0XwVaqMNyeboRi1Gx8NSIC2zA2yJn8ocT-B4v5HzaLpETV8vU1byfBF2PAvlnTj6Y38e1Rch5F" class="img-fluid mb-3 rounded shadow-sm" alt="Produk Detail">
                         </div>
                         <div class="col-md-7">
-                            <h2 class="text-dark">Smartwatch X1 Terbaru</h2>
-                            <h3 class="text-danger mb-3">Rp1.200.000,-</h3>
-                            <p class="text-muted">Status: **FLASH SALE!**</p>
-                            <p>Smartwatch multifungsi dengan layar AMOLED yang tajam. Dilengkapi dengan sensor detak jantung, monitor tidur, dan tahan air hingga 5 ATM.</p>
+                            <h2 class="text-dark">Moondrop Space Travel 2 II 2nd Gen HiFi ANC TWS Bluetooth Earbuds</h2>
+                            <h3 class="text-danger mb-3">Rp 450.000,-</h3>
+                            <p class="text-muted">Status: STOK TERSEDIA</p>
+                            <p>Earbuds TWS HiFi dengan driver dinamis 13mm, Active Noise Cancellation (ANC) lebar, dan mode game latensi rendah 55ms. Audio berkualitas dengan Beryllium driver yang menghasilkan *bass punchy* dan *mid natural*.</p>
                             <hr>
                             <ul class="list-unstyled">
-                                <li><i class="bi bi-check-circle-fill text-danger me-2"></i> Tahan Air (5 ATM)</li>
-                                <li><i class="bi bi-check-circle-fill text-danger me-2"></i> Baterai 14 Hari</li>
+                                <li><i class="bi bi-check-circle-fill text-danger me-2"></i> Bluetooth: 6.0 (Low Latency Gaming Mode)</li>
+                                <li><i class="bi bi-check-circle-fill text-danger me-2"></i> ANC: Ya</li>
                             </ul>
-                            <p class="fw-bold text-accent">Promo berakhir dalam 24 jam!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer bg-light">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-danger">Tambah ke Keranjang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="modal fade" id="productDetailModal2" tabindex="-1" aria-labelledby="productDetailModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h5 class="modal-title" id="productDetailModal2Label">Detail Produk: HP Iqoo Z9 5G</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-light">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt5KaVz5IdY-ylniMt6ILxQRN4NwuoSyi69w&s" class="img-fluid mb-3 rounded shadow-sm" alt="Produk Detail">
+                        </div>
+                        <div class="col-md-7">
+                            <h2 class="text-dark">HP Iqoo Z9 5G (8GB/128GB)</h2>
+                            <h3 class="text-danger mb-3">Rp 3.999.000,-</h3>
+                            <p class="text-muted">Status: PROMO BULAN INI</p>
+                            <p>Smartphone 5G dengan performa gaming unggul dan baterai besar. Ditenagai prosesor kencang dan layar AMOLED 120Hz yang memukau. Ideal untuk pengguna yang membutuhkan kecepatan dan daya tahan.</p>
+                            <hr>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-danger me-2"></i> RAM/Penyimpanan: 8GB/128GB</li>
+                                <li><i class="bi bi-check-circle-fill text-danger me-2"></i> Layar: AMOLED 120Hz</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer bg-light">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-danger">Tambah ke Keranjang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="modal fade" id="productDetailModal3" tabindex="-1" aria-labelledby="productDetailModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h5 class="modal-title" id="productDetailModal3Label">Detail Produk: Honda CRF150L</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-light">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="https://imgcdn.oto.com/medium/gallery/exterior/73/1263/honda-crf-150l-61687.jpg" class="img-fluid mb-3 rounded shadow-sm" alt="Produk Detail">
+                        </div>
+                        <div class="col-md-7">
+                            <h2 class="text-dark">Honda CRF150L (Motor Trail)</h2>
+                            <h3 class="text-danger mb-3">Rp 35.930.000,-</h3>
+                            <p class="text-muted">Status: PRE-ORDER 2 MINGGU</p>
+                            <p>Motor trail/dual-sport tangguh yang siap melibas segala medan. Dilengkapi mesin 149,15 cc SOHC PGM-FI, suspensi upside down di depan, dan sistem pengereman cakram ganda untuk kontrol optimal.</p>
+                            <hr>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-danger me-2"></i> Mesin: 149,15 cc SOHC PGM-FI</li>
+                                <li><i class="bi bi-check-circle-fill text-danger me-2"></i> Suspensi Depan: Inverted Fork (Upside Down)</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -242,4 +311,3 @@
 </body>
 
 </html>
-
