@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendidikan - Versi Lengkap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        /* ================================== */
+        /* CSS Kustom */
+        /* ================================== */
+        *{
+            font-family: sans-serif;
+        }
+        body{
+            background: #f1fbff; 
+        }
+        /* Kelas Padding untuk semua section */
+        .section-padding{
+            padding: 100px 0;
+        }
+        /* Carousel Styling BARU */
+        .carousel-item {
+            height: 100vh;
+            min-height: 300px;
+        }
+        .carousel-item img {
+            height: 100vh;
+            object-fit: cover;
+        }
+        /* **TAMBAHAN CSS UNTUK TEKS DI TENGAH CAROUSEL** */
+        .carousel-caption-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white; /* Warna teks */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Bayangan agar mudah dibaca */
+        }
+        .carousel-caption-center h1 {
+            font-size: 4rem; /* Ukuran Judul */
+            font-weight: 800;
+        }
+        .carousel-caption-center p {
+            font-size: 1.5rem; /* Ukuran Subteks */
+        }
+        /* Akhir Tambahan CSS */
+        
+        .services .card-body i{
+            font-size: 50px;
+        }
+        /* Penyesuaian untuk bagian Team (Tentang Saya) */
+        .team.section-padding {
+            padding: 120px 0; /* Padding lebih besar */
+        }
+        .team .card-body h3.card-title{
+            font-size: 2.2rem; /* Memperbesar nama */
+            font-weight: 700;
+        }
+        .team .card-body p.card-text{
+            font-size: 1.15rem; /* Memperbesar deskripsi */
+        }
+        .team .card-body .socials i{
+            font-size: 2.8rem; /* **UKURAN IKON SOSIAL MEDIA DIPERBESAR SEDIKIT** */
+            margin: 0 10px; /* Jarak antar ikon */
+        }
+        /* Styling Navbar */
+        .navbar-nav a{
+            font-size: 15px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        .navbar-light .navbar-brand{
+            color: #000;
+            font-size: 25px; 
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+        .navbar-light .navbar-brand:focus,
+        .navbar-light .navbar-brand:hover{
+            color: #000;
+        }
+        .navbar-light .navbar-nav .navbar-link{
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container">
+       <a class="navbar-brand" href="#"><span class="text-warning">Edu</span>Web</a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+         <li class="nav-item">
+           <a class="nav-link" href="#home">Home</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#about">Web Dasar</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#web-design">Desain Web</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#about-dbms">DBMS</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#class">Class</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#services">Services</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#team">Team</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#contact">Contact</a>
+         </li>
+       </ul>
+         </div>
+       </div>
+    </nav>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner" id="home">
+        <div class="carousel-item active d-flex align-items-center justify-content-center text-center">
+          <img src="mountain1.avif" class="d-block w-100" alt="Slider 1">
+          <div class="carousel-caption-center">
+              <h1>Kuasai Web, Raih Masa Depan!</h1>
+              <p>Fondasi Kuat Pengembangan Web Modern</p>
+              <a href="#class" class="btn btn-warning btn-lg mt-3">Lihat Kelas Unggulan</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="mountain2.avif" class="d-block w-100" alt="Slider 2">
+        </div>
+        <div class="carousel-item">
+          <img src="mountain3.avif" class="d-block w-100" alt="Slider 3">
+        </div>
+      </div>
+    </div>
+    
+    <section id="class" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>Kelas Pelatihan Unggulan</h2>
+                        <p>Dapatkan fondasi pemrograman dan desain yang kuat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="card shadow h-100">
+                        <img src="https://picsum.photos/600/350?random=11" class="card-img-top" alt="Pemrograman Web Dasar">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-primary">Pemrograman Web Dasar</h5>
+                            <p class="card-text">Memahami dan menguasai HTML, CSS, dan JavaScript sebagai pilar utama pembuatan website.</p>
+                            <button type="button" class="btn btn-success mt-auto" data-bs-toggle="modal" data-bs-target="#cardModal1">
+                                Detail Kelas
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="card shadow h-100">
+                        <img src="https://picsum.photos/600/350?random=12" class="card-img-top" alt="Desain Web">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-primary">Desain Web (UX/UI & Bootstrap)</h5>
+                            <p class="card-text">Menciptakan tata letak yang indah dan responsif menggunakan prinsip UX/UI dan Framework Bootstrap.</p>
+                            <button type="button" class="btn btn-success mt-auto" data-bs-toggle="modal" data-bs-target="#cardModal2">
+                                Detail Kelas
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="card shadow h-100">
+                        <img src="https://picsum.photos/600/350?random=13" class="card-img-top" alt="DBMS">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-primary">Database Management System (DBMS)</h5>
+                            <p class="card-text">Belajar mengelola, menyimpan, dan mengambil data dengan efisien menggunakan MySQL atau sejenisnya.</p>
+                            <button type="button" class="btn btn-success mt-auto" data-bs-toggle="modal" data-bs-target="#cardModal3">
+                                Detail Kelas
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="about-section-padding section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="about-img">
+                        <img src="about.png" alt="Gambar Tentang Pemrograman Web" class="img-fluid"> 
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 ps-lg-5 mt-md-5">
+                    <div class="about-text">
+                        <h2>Pemrograman Web Dasar dan <span class="text-warning">Bootstrap</span></h2>
+                        <p>
+                            Pemrograman Web Dasar adalah <strong>fondasi</strong> yang wajib dikuasai untuk membangun segala jenis situs web, terdiri dari:
+                            <br><br>
+                            <ol>
+                                <li><strong>HTML (HyperText Markup Language):</strong> Bertanggung jawab atas <strong>struktur</strong> dan konten halaman (kerangka).</li>
+                                <li><strong>CSS (Cascading Style Sheets):</strong> Bertanggung jawab atas <strong>gaya</strong> dan tampilan visual halaman.</li>
+                                <li><strong>JavaScript (JS):</strong> Bertanggung jawab atas <strong>interaktivitas</strong> dan fungsionalitas dinamis.</li>
+                            </ol>
+                            <br>
+                            <strong>Bootstrap</strong> adalah <strong>Framework CSS</strong> yang membantu Anda membangun website <strong>responsif</strong> dengan cepat tanpa perlu membuat semua CSS dari nol.
+                        </p>
+                        <a href="#" class="btn btn-warning">Pelajari Lebih Lanjut</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="web-design" class="section-padding bg-light"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-12 order-lg-2">
+                    <div class="about-img">
+                        <img src="download.jpeg" alt="Gambar Ilustrasi Web Design" class="img-fluid"> 
+                    </div>
+                </div>
+
+                <div class="col-lg-8 col-md-12 ps-lg-5 mt-md-5 order-lg-1">
+                    <div class="about-text">
+                        <h2 class="mb-4">Desain Web: Estetika dan <span class="text-primary">Pengalaman Pengguna (UX/UI)</span></h2>
+                        <p>
+                            <strong>Desain Web</strong> berfokus pada <strong>tampilan</strong> dan <strong>pengalaman pengguna</strong> dari sebuah situs web. Desain yang baik memastikan situs Anda tidak hanya indah (<strong>UI - User Interface</strong>) tetapi juga mudah digunakan dan dinavigasi (<strong>UX - User Experience</strong>).
+                        </p>
+                        <p>
+                            Dalam konteks Bootstrap, desain web mencakup penggunaan Grid System, pemilihan tipografi, warna, dan tata letak yang konsisten dan adaptif.
+                        </p>
+                        <h4 class="mt-4">Elemen Kunci Desain Responsif:</h4>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-light">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i> <strong>Responsif:</strong> Menggunakan sistem Grid 12 kolom untuk adaptasi ke semua perangkat.
+                            </li>
+                            <li class="list-group-item bg-light">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i> <strong>Konsistensi:</strong> Memanfaatkan komponen (Navbar, Card, Button) yang seragam.
+                            </li>
+                            <li class="list-group-item bg-light">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i> <strong>Aksesibilitas:</strong> Memastikan kontras warna dan ukuran teks memadai.
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-primary mt-4">Lihat Prinsip Desain</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-dbms" class="section-padding"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="about-img">
+                        <img src="DBMS.jpeg" alt="Gambar Database" class="img-fluid"> 
+                    </div>
+                </div>
+
+                <div class="col-lg-8 col-md-12 ps-lg-5 mt-md-5">
+                    <div class="about-text">
+                        <h2 class="mb-4">Database Management System (<span class="text-warning">DBMS</span>)</h2>
+                        <p>
+                            <strong>DBMS</strong> (seperti MySQL, PostgreSQL, atau MongoDB) adalah perangkat lunak yang memungkinkan Anda untuk <strong>berinteraksi dengan database</strong>. Ini adalah pilar krusial untuk situs web dinamis (seperti e-commerce atau blog) yang harus menyimpan dan mengelola data.
+                        </p>
+                        <p>
+                            Tanpa DBMS, setiap data yang dimasukkan oleh pengguna akan hilang saat halaman dimuat ulang. DBMS menyediakan <strong>sistem terstruktur</strong> untuk memastikan data <strong>aman</strong> dan <strong>konsisten</strong>.
+                        </p>
+                        <h4 class="mt-4">Pentingnya DBMS dalam Web Development:</h4>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <i class="bi bi-server text-success me-2"></i> <strong>Penyimpanan Data:</strong> Menyimpan data secara persisten dan aman.
+                            </li>
+                            <li class="list-group-item">
+                                <i class="bi bi-search text-success me-2"></i> <strong>Query Data:</strong> Memungkinkan pengambilan dan manipulasi data spesifik menggunakan SQL.
+                            </li>
+                            <li class="list-group-item">
+                                <i class="bi bi-diagram-3-fill text-success me-2"></i> <strong>Integritas:</strong> Memastikan hubungan antar data (relasi) tetap valid.
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-warning mt-4">Lihat Kelas DBMS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>Layanan Kami</h2>
+                        <p>Fokus pada fondasi kuat pengembangan dan desain web modern.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="col-12 col-md-12 col-lg-4 mb-4">
+                    <div class="card text-white text-center bg-primary pb-2 shadow">
+                        <div class="card-body">
+                            <i class="bi bi-code-slash"></i>
+                            <h3 class="card-title mt-3">Fondasi Web (HTML & CSS)</h3>
+                            <p class="lead">Menguasai dasar-dasar struktur konten (HTML) dan styling visual (CSS) untuk setiap situs web.</p>
+                            <button class="btn btn-warning text-dark">Mulai Belajar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-4 mb-4">
+                    <div class="card text-dark text-center bg-light pb-2 shadow">
+                        <div class="card-body">
+                            <i class="bi bi-display-fill"></i>
+                            <h3 class="card-title mt-3">Desain Responsif (Bootstrap)</h3>
+                            <p class="lead">Membuat antarmuka yang adaptif dan profesional, memastikan tampilan sempurna di semua perangkat.</p>
+                            <button class="btn btn-primary text-white">Lihat Modul</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-4 mb-4">
+                    <div class="card text-white text-center bg-dark pb-2 shadow">
+                        <div class="card-body">
+                            <i class="bi bi-lightning-fill"></i>
+                            <h3 class="card-title mt-3">Interaktivitas & UX Dasar</h3>
+                            <p class="lead">Menambahkan fungsionalitas dinamis menggunakan JavaScript dasar dan prinsip Pengalaman Pengguna (UX).</p>
+                            <button class="btn btn-warning text-dark">Gabung Kelas</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-header text-center pb-5">
+                    <h2>Tentang Saya</h2>
+                    <p>Profil Singkat Pembuat Proyek Web Dasar ini.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6"> 
+                <div class="card text-center shadow p-4"> 
+                    <div class="card-body">
+                        <img src="zidane.jpg" alt="Foto Profil Muhamad Ihsan Al'Zidane" 
+                             class="img-fluid rounded-circle mb-4" 
+                             style="width: 180px; height: 180px; object-fit: cover;"> 
+                        <h3 class="card-title py-2">Muhamad Ihsan Al'Zidane</h3>
+                        <p class="card-text text-muted">
+                            Student Web Developer | Fokus pada HTML, CSS, Bootstrap, JavaScript, dan Konsep Dasar DBMS.
+                        </p>
+
+                        <div class="socials mt-4">
+                            <a href="#" class="text-decoration-none"><i class="bi bi-twitter text-primary mx-3"></i></a>
+                            <a href="#" class="text-decoration-none"><i class="bi bi-facebook text-primary mx-3"></i></a>
+                            <a href="#" class="text-decoration-none"><i class="bi bi-instagram text-danger mx-3"></i></a>
+                            <a href="#" class="text-decoration-none"><i class="bi bi-linkedin text-info mx-3"></i></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-header text-center pb-5">
+                    <h2>Contact Us</h2>
+                    <p>Hubungi kami untuk informasi lebih lanjut tentang kelas dan layanan kami.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row m-0 justify-content-center"> 
+            <div class="col-md-8 p-0 pt-4 pb-4">
+                <form action="#" class="bg-white p-4 shadow rounded">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" required placeholder="Nama Lengkap Anda">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <input type="email" class="form-control" required placeholder="Email Anda">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <textarea rows="5" required class="form-control" placeholder="Pesan Anda"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-warning btn-lg mt-3">Kirim Pesan</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark p-2 text-center">
+    <div class="container">
+        <p class="text-white mb-0">Hak Cipta &copy; 2024. Website ini dibuat oleh Zidane.</p>
+    </div>
+</footer>
+
+<div class="modal fade" id="cardModal1" tabindex="-1" aria-labelledby="cardModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="cardModal1Label">Detail Kelas: Pemrograman Web Dasar</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://picsum.photos/600/350?random=11" class="img-fluid mb-3 rounded" alt="Detail Web Dasar">
+                    <p>Kelas ini mencakup penguasaan kerangka (HTML), penataan gaya (CSS), dan interaksi dasar (JavaScript). Cocok untuk Anda yang benar-benar baru di dunia pengembangan web.</p>
+                    <ul>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> Materi: HTML5, CSS3, JS ES6 Dasar.</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> Output: Membuat 5 halaman website statis.</li>
+                    </ul>
+                    <p class="fw-bold text-danger">Tingkat: Pemula | Durasi: 4 Minggu</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <a href="#" class="btn btn-success">Daftar Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="cardModal2" tabindex="-1" aria-labelledby="cardModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="cardModal2Label">Detail Kelas: Desain Web (UX/UI & Bootstrap)</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://picsum.photos/600/350?random=12" class="img-fluid mb-3 rounded" alt="Detail Desain Web">
+                    <p>Fokus pada prinsip desain, estetika, dan responsivitas. Kita akan banyak menggunakan Framework Bootstrap untuk mempercepat proses layouting profesional.</p>
+                    <ul>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> Materi: Grid System, Komponen Bootstrap, UX/UI Dasar.</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> Output: Membuat landing page responsif.</li>
+                    </ul>
+                    <p class="fw-bold text-danger">Tingkat: Menengah | Durasi: 5 Minggu</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <a href="#" class="btn btn-success">Daftar Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="cardModal3" tabindex="-1" aria-labelledby="cardModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="cardModal3Label">Detail Kelas: Database Management System (DBMS)</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://picsum.photos/600/350?random=13" class="img-fluid mb-3 rounded" alt="Detail DBMS">
+                    <p>Kelas penting untuk web dinamis. Anda akan belajar merancang skema database, menggunakan bahasa SQL, dan melakukan CRUD (Create, Read, Update, Delete) data.</p>
+                    <ul>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> Materi: ERD, Normalisasi, Query SQL (SELECT, INSERT, UPDATE, DELETE).</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i> Output: Database untuk aplikasi e-commerce sederhana.</li>
+                    </ul>
+                    <p class="fw-bold text-danger">Tingkat: Lanjutan | Durasi: 6 Minggu</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <a href="#" class="btn btn-success">Daftar Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
