@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Dialektika - Konsultan Bisnis E-commerce & Strategi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        /* ================================== */
+        /* CSS Kustom */
+        /* ================================== */
+        *{
+            font-family: sans-serif;
+        }
+        body{
+            background: #f1fbff; 
+        }
+        /* Kelas Padding untuk semua section */
+        .section-padding{
+            padding: 100px 0;
+        }
+        
+        /* HOME SECTION BARU (STATIS) */
+        #home {
+            position: relative; 
+            height: 100vh; /* Memastikan full screen height */
+            background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&auto=format&fit=crop&q=60'); /* Menggunakan gambar pertama dari carousel */
+            background-size: cover;
+            background-position: center;
+            /* Memberikan overlay gelap pada latar belakang */
+            box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5); 
+        }
+
+        /* CSS UNTUK TEKS KONSTAN DI ATAS HOME SECTION */
+        .carousel-caption-fixed {
+            position: absolute; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            z-index: 10; 
+            color: white; 
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 1); 
+            width: 90%; 
+            max-width: 1000px;
+            text-align: center;
+        }
+        .carousel-caption-fixed h1 {
+            font-size: clamp(2.5rem, 8vw, 5rem); 
+            font-weight: 900;
+        }
+        .carousel-caption-fixed p {
+            font-size: clamp(1.2rem, 3vw, 2rem); 
+        }
+        /* Akhir CSS Teks Konstan */
+        
+        .services .card-body i{
+            font-size: 50px;
+        }
+        /* Penyesuaian untuk bagian Team (Tentang Saya) */
+        .team.section-padding {
+            padding: 120px 0;
+        }
+        .team .card-body h3.card-title{
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+        .team .card-body p.card-text{
+            font-size: 1.15rem;
+        }
+        .team .card-body .socials i{
+            font-size: 2.8rem;
+            margin: 0 10px;
+        }
+        /* Styling Navbar */
+        .navbar-nav a{
+            font-size: 15px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        .navbar-light .navbar-brand{
+            color: #000;
+            font-size: 25px; 
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+        .navbar-light .navbar-brand:focus,
+        .navbar-light .navbar-brand:hover{
+            color: #000;
+        }
+        .navbar-light .navbar-nav .navbar-link{
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+      <div class="container">
+       <a class="navbar-brand" href="#"><span class="text-primary">Studio</span> Dialektika</a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+         <li class="nav-item">
+           <a class="nav-link" href="#home">Home</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#tentang">Strategi</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#layanan">Pilar Layanan</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#tujuan">Tujuan Kami</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#team">Team</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#contact">Kontak</a>
+         </li>
+       </ul>
+         </div>
+       </div>
+    </nav>
+
+    <div id="home" class="position-relative"> 
+        
+        <div class="carousel-caption-fixed">
+            <h1 class="text-warning">STUDIO DIALEKTIKA</h1>
+            <h1 class="text-white">Strategy & Insights untuk E-commerce</h1>
+            <p class="lead">Kami adalah konsultan strategis yang mendorong pertumbuhan bisnis Anda di pasar E-commerce dan digital.</p>
+            <a href="#tujuan" class="btn btn-warning btn-lg mt-3 shadow-lg">Lihat Tujuan Kami</a>
+        </div>
+        
+        </div> 
+    
+    <section id="tujuan" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>Tiga Tujuan Utama Konsultasi Kami</h2>
+                        <p>Filosofi yang menggerakkan setiap strategi bisnis yang kami petakan.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="card shadow h-100">
+                        <img src="https://picsum.photos/600/350?random=11" class="card-img-top" alt="Tujuan 1"> 
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-primary">1. Efisiensi Operasional E-commerce</h5>
+                            <p class="card-text">Menciptakan alur logistik yang efisien, mengoptimalkan inventaris, dan memangkas biaya pemenuhan pesanan.</p>
+                            <button type="button" class="btn btn-success mt-auto" data-bs-toggle="modal" data-bs-target="#modalTujuan1">
+                                Lihat Detail Tujuan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="card shadow h-100">
+                        <img src="https://picsum.photos/600/350?random=12" class="card-img-top" alt="Tujuan 2"> 
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-primary">2. Pengalaman Pengguna Optimal (UX/UI)</h5>
+                            <p class="card-text">Setiap platform harus intuitif, mudah diakses, dan dirancang untuk memaksimalkan tingkat konversi.</p>
+                            <button type="button" class="btn btn-success mt-auto" data-bs-toggle="modal" data-bs-target="#modalTujuan2">
+                                Lihat Detail Tujuan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="card shadow h-100">
+                        <img src="https://picsum.photos/600/350?random=13" class="card-img-top" alt="Tujuan 3"> 
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-primary">3. Skalabilitas & Keamanan Jangka Panjang</h5>
+                            <p class="card-text">Memastikan infrastruktur platform aman dan siap tumbuh seiring peningkatan volume transaksi bisnis Anda.</p>
+                            <button type="button" class="btn btn-success mt-auto" data-bs-toggle="modal" data-bs-target="#modalTujuan3">
+                                Lihat Detail Tujuan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="tentang" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <img src="https://raw.githubusercontent.com/Shiraori19/Desain-Web/refs/heads/main/Logo2.png" alt="Filosofi Perusahaan" class="img-fluid rounded shadow-lg mb-4 mb-lg-0"> 
+                </div>
+                <div class="col-lg-6 col-md-12 ps-lg-5">
+                    <div class="about-text">
+                        <h2 class="mb-4">Siapa Kami? <span class="text-primary">Membangun Strategi Bisnis Digital Anda</span></h2>
+                        <p class="lead">
+                             Studio Dialektika adalah konsultan yang didorong oleh data. Kami menerjemahkan potensi bisnis Anda ke dalam strategi E-commerce yang terukur dan menguntungkan.
+                        </p>
+                        <p>
+                            Kami menggabungkan analisis pasar mendalam, keahlian pemasaran digital (SEO & PPC), dan optimasi operasional untuk menciptakan strategi holistik. Kami tidak hanya memberi tahu *apa* yang harus dilakukan, tetapi juga membantu *bagaimana* melaksanakannya di platform-platform digital. Fokus kami adalah profitabilitas dan pertumbuhan yang berkelanjutan.
+                        </p>
+                        <ul class="list-unstyled mt-4">
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> <strong>Fokus 100% pada Solusi Berbasis Data (Data-Driven)</strong></li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> <strong>Mengutamakan ROI Pemasaran dan Efisiensi</strong></li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> <strong>Proses Konsultasi yang Kolaboratif dan Transparan</strong></li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary mt-3">Mulai Konsultasi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="layanan" class="section-padding bg-light">
+        <div class="container">
+             <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>Pilar Layanan Konsultasi Kami</h2>
+                        <p>Tiga area utama untuk mengoptimalkan kinerja E-commerce Anda.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card p-3 shadow-sm h-100 text-center">
+                        <i class="bi bi-database-fill-gear text-primary display-4 mb-3"></i>
+                        <h5 class="card-title">Data Analytics & Insights</h5>
+                        <p class="card-text">Analisis performa penjualan, perilaku pelanggan, dan identifikasi peluang pertumbuhan pasar.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card p-3 shadow-sm h-100 text-center">
+                        <i class="bi bi-bar-chart-fill text-warning display-4 mb-3"></i>
+                        <h5 class="card-title">Strategic Business Planning</h5>
+                        <p class="card-text">Perencanaan jangka pendek & panjang, penetapan KPI, dan strategi ekspansi kanal penjualan (omnichannel).</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card p-3 shadow-sm h-100 text-center">
+                        <i class="bi bi-laptop text-info display-4 mb-3"></i>
+                        <h5 class="card-title">E-commerce Platform Optimization</h5>
+                        <p class="card-text">Optimasi alur pembelian, integrasi payment gateway, dan perbaikan kecepatan loading situs.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card p-3 shadow-sm h-100 text-center">
+                        <i class="bi bi-palette-fill text-danger display-4 mb-3"></i>
+                        <h5 class="card-title">Digital Marketing & Branding</h5>
+                        <p class="card-text">Mendesain identitas merek yang kohesif dan strategi pemasaran melalui SEO, konten, dan ads.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center pt-4">
+                <a href="#ringkasan-layanan" class="btn btn-success btn-lg">Lihat Ringkasan Layanan</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="ringkasan-layanan" class="services section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>Ringkasan Layanan Kami</h2>
+                        <p>Fokus utama Studio Dialektika untuk pertumbuhan bisnis Anda.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="col-12 col-md-12 col-lg-4 mb-4">
+                    <div class="card text-white text-center bg-primary pb-2 shadow h-100">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <i class="bi bi-briefcase"></i>
+                                <h3 class="card-title mt-3">Strategic Consulting</h3>
+                                <p class="lead">Perumusan visi, misi, dan peta jalan digital yang jelas untuk bisnis.</p>
+                            </div>
+                            <button class="btn btn-warning text-dark mt-3">Detail Strategi</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-4 mb-4">
+                    <div class="card text-dark text-center bg-light pb-2 shadow h-100">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <i class="bi bi-graph-up-arrow"></i>
+                                <h3 class="card-title mt-3">Data Driven Marketing</h3>
+                                <p class="lead">Strategi akuisisi pelanggan (SEO, Ads, SMM) yang diukur berdasarkan ROI.</p>
+                            </div>
+                            <button class="btn btn-primary text-white mt-3">Detail Pemasaran</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-4 mb-4">
+                    <div class="card text-white text-center bg-dark pb-2 shadow h-100">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <i class="bi bi-truck"></i>
+                                <h3 class="card-title mt-3">Operational Excellence</h3>
+                                <p class="lead">Optimalisasi manajemen rantai pasok dan alur pemenuhan pesanan (logistik).</p>
+                            </div>
+                            <button class="btn btn-warning text-dark mt-3">Detail Operasi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-header text-center pb-5">
+                    <h2>Tentang Saya</h2>
+                    <p>Profil Singkat Pembuat Proyek Web Dasar ini.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6"> 
+                <div class="card text-center shadow p-4"> 
+                    <div class="card-body">
+                        <img src="https://raw.githubusercontent.com/Shiraori19/Desain-Web/refs/heads/main/zidane.jpg" alt="Foto Profil Muhamad Ihsan Al'Zidane" 
+                             class="img-fluid rounded-circle mb-4" 
+                             style="width: 180px; height: 180px; object-fit: cover;"> 
+                        <h3 class="card-title py-2">Muhamad Ihsan Al'Zidane</h3>
+                        <p class="card-text text-muted">
+                            Student Web Developer | Fokus pada HTML, CSS, Bootstrap, JavaScript, dan Konsep Dasar DBMS.
+                        </p>
+
+                        <div class="socials mt-4">
+                            <a href="#" class="text-decoration-none"><i class="bi bi-twitter text-primary mx-3"></i></a>
+                            <a href="#" class="text-decoration-none"><i class="bi bi-facebook text-primary mx-3"></i></a>
+                            <a href="#" class="text-decoration-none"><i class="bi bi-instagram text-danger mx-3"></i></a>
+                            <a href="#" class="text-decoration-none"><i class="bi bi-linkedin text-info mx-3"></i></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact section-padding bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-header text-center pb-5">
+                    <h2>Hubungi Kami</h2>
+                    <p>Mari diskusikan proyek digital Anda bersama tim ahli kami.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row m-0 justify-content-center"> 
+            <div class="col-md-8 p-0 pt-4 pb-4">
+                <form action="#" class="bg-white p-4 shadow rounded">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <input type="text" class="form-control" required placeholder="Nama Lengkap Anda">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="email" class="form-control" required placeholder="Email Anda">
+                        </div>
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" required placeholder="Subjek Pesan">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <textarea rows="5" required class="form-control" placeholder="Pesan Anda"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg mt-3">Kirim Pesan Sekarang</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark p-3 text-center">
+    <div class="container">
+        <p class="text-white mb-0">Hak Cipta &copy; 2024 Studio Dialektika. All rights reserved.</p>
+    </div>
+</footer>
+
+<div class="modal fade" id="modalTujuan1" tabindex="-1" aria-labelledby="modalTujuan1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title" id="modalTujuan1Label">Tujuan 1: Efisiensi Operasional E-commerce</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="https://picsum.photos/600/400?random=21" class="img-fluid mb-3 rounded" alt="Detail Efisiensi"> 
+                <p>Kami menyediakan solusi yang fokus pada <strong> rantai pasok** dan **pengurangan biaya logistik</strong> per transaksi. Kami membantu menyederhanakan alur kerja gudang dan pengiriman untuk memaksimalkan margin keuntungan Anda.</p>
+                <ul>
+                    <li><i class="bi bi-cpu-fill text-primary me-2"></i> Implementasi Sistem Otomasi.</li>
+                    <li><i class="bi bi-clock-fill text-primary me-2"></i> Pengurangan Waktu Proses Manual.</li>
+                    <li><i class="bi bi-graph-up-arrow text-primary me-2"></i> Peningkatan Laba Bersih Klien.</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                <a href="#contact" class="btn btn-success">Dapatkan Konsultasi</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalTujuan2" tabindex="-1" aria-labelledby="modalTujuan2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title" id="modalTujuan2Label">Tujuan 2: Pengalaman Pengguna Optimal (UX/UI)</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="https://picsum.photos/600/400?random=22" class="img-fluid mb-3 rounded" alt="Detail UX/UI"> 
+                <p>Fokus kami adalah pada desain yang memfasilitasi penjualan. Kami melakukan audit UX/UI untuk mengidentifikasi *bottleneck* konversi, memastikan platform Anda mudah digunakan, cepat, dan **meminimalkan *cart abandonment***.</p>
+                <ul>
+                    <li><i class="bi bi-people-fill text-primary me-2"></i> Riset & Persona Pengguna.</li>
+                    <li><i class="bi bi-tv-fill text-primary me-2"></i> Desain Responsif & Mobile-First.</li>
+                    <li><i class="bi bi-easel-fill text-primary me-2"></i> Pengujian Usabilitas Berulang.</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                <a href="#contact" class="btn btn-success">Dapatkan Konsultasi</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalTujuan3" tabindex="-1" aria-labelledby="modalTujuan3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title" id="modalTujuan3Label">Tujuan 3: Skalabilitas & Keamanan Jangka Panjang</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="https://picsum.photos/600/400?random=23" class="img-fluid mb-3 rounded" alt="Detail Skalabilitas"> 
+                <p>Kami merancang arsitektur E-commerce yang mampu menangani lonjakan lalu lintas (misalnya saat promosi besar) tanpa *crash*. Kami juga memprioritaskan keamanan data pelanggan dan transaksi finansial Anda.</p>
+                <ul>
+                    <li><i class="bi bi-shield-lock-fill text-primary me-2"></i> Implementasi Standar Keamanan OWASP.</li>
+                    <li><i class="bi bi-truck-flatbed text-primary me-2"></i> Arsitektur Microservices (Siap Skala Besar).</li>
+                    <li><i class="bi bi-code-slash text-primary me-2"></i> Kualitas Kode Bersih (Clean Code).</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                <a href="#contact" class="btn btn-success">Dapatkan Konsultasi</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
