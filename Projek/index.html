@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuningan - Profil Lengkap Kota Kelahiran</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* 1. Pengaturan Dasar & Font */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth; 
+            background-color: #f4f7f6; 
+        }
+
+        /* 2. Gaya Hero Section (Home/Profil) */
+        #home {
+            /* Asumsi Anda menempatkan gambar di folder /img dengan nama ini */
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/hero-background-kuningan.jpg') no-repeat center center fixed; 
+            background-size: cover;
+            color: white;
+            padding-top: 150px;
+            padding-bottom: 150px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        /* 3. Padding untuk Semua Section */
+        .section-padding {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+        
+        /* 4. Gaya Navbar */
+        .navbar-brand {
+            font-weight: bold;
+            color: #4CAF50 !important; /* Hijau Khas Kuningan */
+        }
+        .nav-link:hover {
+            color: #ffd700 !important; /* Emas saat hover */
+        }
+
+        /* 5. Gaya Card */
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 10px;
+            height: 100%; 
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        /* 6. Warna Utama */
+        .text-primary-kuningan {
+            color: #198754 !important; /* Hijau Tua */
+        }
+        .bg-primary-kuningan {
+            background-color: #198754 !important;
+        }
+        .icon-box {
+            font-size: 2.5rem;
+            color: #198754;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">🏡 KUNINGANKU</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#profil">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pemerintahan">Pemerintahan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sejarah">Sejarah</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kuliner">Kuliner</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#budaya-agama">Budaya & Agama</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#wisata">Wisata</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="home" class="text-center">
+        <div class="container">
+            <h1 class="display-2 fw-bold text-uppercase">KUNINGAN</h1>
+            <p class="lead mb-4">Kota Kaki Gunung Ciremai: Sejuk, Historis, dan Penuh Pesona Alam.</p>
+            <a href="#profil" class="btn btn-success btn-lg">Pelajari Kuningan</a>
+        </div>
+    </header>
+
+    <section id="profil" class="section-padding bg-white">
+        <div class="container">
+            <h2 class="text-center mb-5 display-5 text-primary-kuningan">ℹ️ Profil Singkat Kabupaten Kuningan</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="lead">Kuningan adalah salah satu kabupaten di Jawa Barat yang terkenal dengan keindahan alamnya karena berada tepat di kaki <strong>Gunung Ciremai</strong>, gunung tertinggi di Jawa Barat.</p>
+                    <p>Udara yang sejuk dan kontur wilayah perbukitan menjadikan Kuningan destinasi favorit untuk ekowisata dan agrowisata. Secara geografis, Kuningan berbatasan langsung dengan Cirebon dan Brebes, membuatnya menjadi simpul penting di wilayah timur Jawa Barat.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="p-4 border rounded shadow-sm bg-light">
+                        <p class="mb-1 text-muted">MOTTO KABUPATEN</p>
+                        <h3 class="fw-bold text-primary-kuningan">Kuningan Aman, Maju, Sehat, dan Agamis (MAS)</h3>
+                        <hr>
+                        <p class="mb-0">KODE AREA TELEPON: <strong>(0232)</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    ---
+
+    <section id="pemerintahan" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 display-5 text-primary-kuningan">🏛️ Struktur Pemerintahan</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="p-4 bg-white rounded shadow-sm">
+                        <div class="icon-box">👤</div>
+                        <h5 class="mt-3">Kepala Daerah</h5>
+                        <p>Dipimpin oleh Bupati dan Wakil Bupati yang dipilih melalui Pemilu Kepala Daerah.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="p-4 bg-white rounded shadow-sm">
+                        <div class="icon-box">🗺️</div>
+                        <h5 class="mt-3">Wilayah Administrasi</h5>
+                        <p>Terdiri dari sejumlah kecamatan, desa, dan kelurahan yang tersebar dari dataran tinggi hingga dataran rendah.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="p-4 bg-white rounded shadow-sm">
+                        <div class="icon-box">🏢</div>
+                        <h5 class="mt-3">Pusat Pemerintahan</h5>
+                        <p>Berlokasi di pusat Kota Kuningan, tempat kantor-kantor pemerintahan utama berada.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    ---
+
+    <section id="sejarah" class="section-padding bg-white">
+        <div class="container">
+            <h2 class="text-center mb-5 display-5 text-primary-kuningan">📜 Jejak Sejarah Kuningan</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6 order-md-1">
+                    <h3 class="mb-3">Peran Kunci dalam Kemerdekaan RI</h3>
+                    <p class="lead">Kuningan dikenal sebagai saksi bisu **Perundingan Linggarjati**.</p>
+                    <p>Pada bulan **November 1946**, perundingan penting antara Indonesia dan Belanda diadakan di Desa Linggarjati, Kuningan. **Gedung Perundingan Linggarjati** yang kini menjadi museum, merupakan pengingat kuat akan kontribusi historis Kuningan bagi bangsa.</p>
+                </div>
+                <div class="col-md-6 order-md-0 text-center">
+                    
+                    <small class="text-muted d-block mt-2">Gedung Perundingan Linggarjati</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    ---
+
+    <section id="kuliner" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 display-5 text-primary-kuningan">🍲 Kuliner Khas yang Menggoda Selera</h2>
+            
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="https://raw.githubusercontent.com/Shiraori19/Desain-Web/refs/heads/main/img/nasi%20kasreng.webp" class="card-img-top" alt="Nasi Kasreng">
+                        <div class="card-body">
+                            <h5 class="card-title text-warning">Nasi Kasreng</h5>
+                            <p class="card-text">Nasi bungkus sederhana yang dipadukan dengan berbagai macam gorengan, ikan asin, dan sambal yang pedas. Legendaris dan merakyat!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="https://raw.githubusercontent.com/Shiraori19/Desain-Web/refs/heads/main/img/Img%20kupat%20tahu.webp" class="card-img-top" alt="Kupat Tahu Kuningan">
+                        <div class="card-body">
+                            <h5 class="card-title text-warning">Kupat Tahu Kuningan</h5>
+                            <p class="card-text">Ketupat dan tahu yang disiram bumbu kacang kental dengan sedikit rasa manis dan asam, dilengkapi tauge dan kerupuk.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="https://raw.githubusercontent.com/Shiraori19/Desain-Web/refs/heads/main/img/hucap.webp" class="card-img-top" alt="Hucap">
+                        <div class="card-body">
+                            <h5 class="card-title text-warning">Hucap (Tahu Kecap)</h5>
+                            <p class="card-text">Mirip Kupat Tahu, namun menggunakan bumbu kecap yang lebih dominan, menjadi hidangan wajib coba saat berkunjung.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    ---
+
+    <section id="budaya-agama" class="section-padding bg-white">
+        <div class="container">
+            <h2 class="text-center mb-5 display-5 text-primary-kuningan">🎭 Budaya & Kerukunan Agama</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="mb-3 text-primary-kuningan">Tradisi dan Kesenian Sunda</h3>
+                    <p>Kuningan berada di wilayah kebudayaan Sunda sehingga keseniannya didominasi oleh tradisi Sunda, seperti: <strong>Kesenian Benjang</strong>, <strong>Tari Buyung</strong>, dan berbagai ritual adat seperti <strong>Ngikis</strong> (pembersihan benda pusaka).</p>
+                    <p>Bahasa yang digunakan sehari-hari oleh mayoritas penduduk adalah Bahasa Sunda dengan dialek khas Kuningan.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="mb-3 text-primary-kuningan">Harmoni Kehidupan Beragama</h3>
+                    <p>Meskipun mayoritas penduduk beragama Islam, Kuningan dikenal sebagai wilayah dengan tingkat kerukunan beragama yang tinggi.</p>
+                    <p>Terdapat berbagai rumah ibadah dari agama yang berbeda (Masjid, Gereja, Wihara) yang berdiri berdampingan. Nilai-nilai toleransi dan gotong royong menjadi pondasi utama kehidupan sosial di Kuningan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    ---
+
+    <section id="wisata" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 display-5 text-primary-kuningan">🌲 Destinasi Wisata Alam Utama</h2>
+            
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="https://raw.githubusercontent.com/Shiraori19/Desain-Web/refs/heads/main/img/cibualn.webp" class="card-img-top" alt="Balong Ikan Cibulan">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Balong Ikan Cibulan</h5>
+                            <p class="card-text">Kolam pemandian yang dihuni oleh "Ikan Dewa" (Kancra Bodas) yang disakralkan. Tempat wisata alam yang kental dengan mitos dan sejarah.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="https://raw.githubusercontent.com/Shiraori19/Desain-Web/refs/heads/main/img/curug%20putri%20palutungan.webp" class="card-img-top" alt="Curug Putri Palutungan">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Curug Putri Palutungan</h5>
+                            <p class="card-text">Salah satu air terjun paling populer, menawarkan kesejukan khas pegunungan dan menjadi pintu masuk pendakian ke Gunung Ciremai.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    ---
+
+    <footer class="bg-dark text-white text-center p-3">
+        <p class="mb-0">&copy; 2024 Website Kuningan Single-Page. Diperbarui untuk Tugas Portofolio.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
